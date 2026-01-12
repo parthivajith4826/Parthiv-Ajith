@@ -3,31 +3,40 @@
 A modern, animated portfolio website built with **HTML, Tailwind CSS, and Vanilla JavaScript**.
 Designed for performance and easy deployment on Vercel.
 
-## 🚀 How to Deploy on Vercel
+## 🚀 Deployment via GitHub (Recommended)
 
-Since this is a **pure static site** (no build step required), deployment is extremely simple.
+Since you already have a GitHub account and Vercel connected, this is the best way to deploy.
 
-### Option 1: Drag & Drop (Easiest)
+1.  **Push to GitHub**:
+    Open your terminal in this `portfolio` folder and run these commands one by one:
 
-1.  Go to [vercel.com](https://vercel.com) and log in.
-2.  Navigate to your Dashboard.
-3.  Click **"Add New..."** -> **"Project"**.
-4.  Drag the entire `portfolio` folder directly onto the Vercel import area.
-5.  Click **Deploy**.
-6.  Done! Vercel will give you a live URL instantly.
+    ```bash
+    git remote add origin https://github.com/parthivajith4826/Parthiv-Ajith.git
+    git branch -M main
+    git push -u origin main
+    ```
 
-### Option 2: Deploy via Git (Recommended for updates)
+2.  **Deploy on Vercel**:
+    1.  Go to your [Vercel Dashboard](https://vercel.com/dashboard).
+    2.  Click **"Add New..."** -> **"Project"**.
+    3.  Select **"Import"** next to your `Parthiv-Ajith` repository.
+    4.  **Framework Preset**: Leave as "Other" (it detects HTML automatically).
+    5.  **Build Command**: Leave empty.
+    6.  **Output Directory**: Leave empty.
+    7.  Click **"Deploy"**.
 
-1.  Push this code to a GitHub repository.
-2.  Go to Vercel and **Import** that repository.
-3.  **Framework Preset**: Select "Other" (or leave as None).
-4.  **Root Directory**: Ensure it points to the root where `index.html` is located.
-5.  Click **Deploy**.
+Your site will be live in seconds! ⚡
+
+### 📝 Note on Environment Variables
+
+This is a **static website** (HTML/CSS/JS only). You do **not** need a `.env` file or `requirements.txt`.
+
+-   **Web3Forms Access Key**: It is safely included directly in the `index.html` form, which is standard for static frontend-only forms.
+-   **No Backend**: No Python or Node.js server is required. Vercel handles the static hosting automatically.
 
 ## 🛠 Customization
 
 -   **Update Projects**: Edit the HTML in the `<section id="projects">` area.
--   **Contact Form**: Create a form handling endpoint at [Formspree](https://formspree.io/) and paste the URL into the `<form action="...">` attribute in `index.html`.
 -   **Colors**: You can adjust the `tailwind.config` script in `index.html` to change the `primary (Cyan)` or `secondary (Violet)` colors.
 
 ## 📁 Folder Structure
@@ -37,11 +46,11 @@ portfolio/
 ├── index.html      # Main website structure
 ├── styles.css      # Custom animations & styles
 ├── script.js       # Animations logic (GSAP)
-└── assets/         # Images & Icons
+└── .gitignore      # Git configuration
 ```
 
 ## ⚡ Tech Stack
 
--   **Tailwind CSS** (via CDN): Utility-first styling.
--   **GSAP** (via CDN): High-performance animations.
--   **Google Fonts**: Inter & Outfit.
+-   **HTML5**
+-   **Tailwind CSS** (via CDN)
+-   **GSAP** (via CDN)
