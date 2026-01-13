@@ -1,56 +1,29 @@
-# Python & Django Developer Portfolio
+# Parthiv Ajith - Developer Portfolio
 
-A modern, animated portfolio website built with **HTML, Tailwind CSS, and Vanilla JavaScript**.
-Designed for performance and easy deployment on Vercel.
+Welcome to my personal portfolio website. This project showcases my skills, projects, and professional background as a Python & Django Developer. It is designed to be modern, responsive, and performance-oriented.
 
-## 🚀 Deployment via GitHub (Recommended)
+## 🚀 Technologies Used
 
-Since you already have a GitHub account and Vercel connected, this is the best way to deploy.
+This portfolio is built with a focus on clean code and modern web standards:
 
-1.  **Push to GitHub**:
-    Open your terminal in this `portfolio` folder and run these commands one by one:
+-   **HTML5**: Semantic structure for better accessibility and SEO.
+-   **CSS3**: Custom styling combined with utility classes.
+-   **Tailwind CSS**: For rapid, responsive styling and a consistent design system.
+-   **JavaScript (ES6+)**: Vanilla JS for logic and DOM manipulation.
+-   **GSAP (GreenSock Animation Platform)**: For smooth, complex animations (scroll triggers, staggers).
+-   **Glassmorphism**: A modern UI design trend used for cards and navigation.
 
-    ```bash
-    git remote add origin https://github.com/parthivajith4826/Parthiv-Ajith.git
-    git branch -M main
-    git push -u origin main
-    ```
+## ✨ Features
 
-2.  **Deploy on Vercel**:
-    1.  Go to your [Vercel Dashboard](https://vercel.com/dashboard).
-    2.  Click **"Add New..."** -> **"Project"**.
-    3.  Select **"Import"** next to your `Parthiv-Ajith` repository.
-    4.  **Framework Preset**: Leave as "Other" (it detects HTML automatically).
-    5.  **Build Command**: Leave empty.
-    6.  **Output Directory**: Leave empty.
-    7.  Click **"Deploy"**.
+-   **Responsive Design**: Fully optimized for desktops, tablets, and mobile devices.
+-   **SEO Optimized**: Includes Open Graph tags, Twitter Cards, and semantic elements for better search engine visibility.
+-   **High Performance**: Lazy loading images, optimized assets, and minimal external dependencies.
+-   **Interactive UI**: Smooth scroll animations, hover effects, and a custom mobile navigation menu.
+-   **Contact Form**: Integrated with Web3Forms for direct email delivery.
 
-Your site will be live in seconds! ⚡
+## 📂 Project Structure
 
-### 📝 Note on Environment Variables
-
-This is a **static website** (HTML/CSS/JS only). You do **not** need a `.env` file or `requirements.txt`.
-
--   **Web3Forms Access Key**: It is safely included directly in the `index.html` form, which is standard for static frontend-only forms.
--   **No Backend**: No Python or Node.js server is required. Vercel handles the static hosting automatically.
-
-## 🛠 Customization
-
--   **Update Projects**: Edit the HTML in the `<section id="projects">` area.
--   **Colors**: You can adjust the `tailwind.config` script in `index.html` to change the `primary (Cyan)` or `secondary (Violet)` colors.
-
-## 📁 Folder Structure
-
-```
-portfolio/
-├── index.html      # Main website structure
-├── styles.css      # Custom animations & styles
-├── script.js       # Animations logic (GSAP)
-└── .gitignore      # Git configuration
-```
-
-## ⚡ Tech Stack
-
--   **HTML5**
--   **Tailwind CSS** (via CDN)
--   **GSAP** (via CDN)
+-   `index.html`: The main entry point containing the structure and content.
+-   `styles.css`: Custom CSS overrides and animations.
+-   `script.js`: JavaScript logic for the mobile menu and GSAP animations.
+-   `assets/`: Directory for images and static assets.

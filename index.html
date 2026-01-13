@@ -8,6 +8,31 @@
             name="description"
             content="Portfolio of Parthiv Ajith, a Python & Django Developer specializing in scalable backend systems."
         />
+        <meta
+            name="keywords"
+            content="Parthiv Ajith, Python Developer, Django Developer, Backend Engineer, Full Stack Developer, Portfolio"
+        />
+        <meta name="author" content="Parthiv Ajith" />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://parthivajith.dev/" />
+        <meta property="og:title" content="Parthiv Ajith | Python & Django Developer" />
+        <meta
+            property="og:description"
+            content="Portfolio of Parthiv Ajith, a Python & Django Developer specializing in scalable backend systems."
+        />
+        <meta property="og:image" content="https://parthivajith.dev/assets/og-image.jpg" />
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://parthivajith.dev/" />
+        <meta property="twitter:title" content="Parthiv Ajith | Python & Django Developer" />
+        <meta
+            property="twitter:description"
+            content="Portfolio of Parthiv Ajith, a Python & Django Developer specializing in scalable backend systems."
+        />
+        <meta property="twitter:image" content="https://parthivajith.dev/assets/og-image.jpg" />
 
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -82,8 +107,12 @@
                     >
                     <a href="#contact" class="nav-link text-sm font-medium hover:text-primary transition-colors">Contact</a>
                 </div>
-                <!-- Mobile Menu Button (Placeholder) -->
-                <button class="md:hidden text-white focus:outline-none">
+                <!-- Mobile Menu Button -->
+                <button
+                    id="mobile-menu-btn"
+                    class="md:hidden text-white focus:outline-none"
+                    aria-label="Toggle mobile menu"
+                >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         class="h-6 w-6"
@@ -94,6 +123,33 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
                     </svg>
                 </button>
+            </div>
+
+            <!-- Mobile Menu (Hidden by default) -->
+            <div
+                id="mobile-menu"
+                class="hidden md:hidden absolute top-full left-0 w-full bg-dark-950/95 backdrop-blur-md border-b border-white/5 py-4 px-6 flex flex-col space-y-4 shadow-xl border-t border-white/5"
+            >
+                <a
+                    href="#about"
+                    class="mobile-nav-link block text-center text-slate-300 hover:text-white font-medium hover:bg-white/5 rounded-lg py-3 transition-colors"
+                    >About</a
+                >
+                <a
+                    href="#skills"
+                    class="mobile-nav-link block text-center text-slate-300 hover:text-white font-medium hover:bg-white/5 rounded-lg py-3 transition-colors"
+                    >Skills</a
+                >
+                <a
+                    href="#projects"
+                    class="mobile-nav-link block text-center text-slate-300 hover:text-white font-medium hover:bg-white/5 rounded-lg py-3 transition-colors"
+                    >Projects</a
+                >
+                <a
+                    href="#contact"
+                    class="mobile-nav-link block text-center text-slate-300 hover:text-white font-medium hover:bg-white/5 rounded-lg py-3 transition-colors"
+                    >Contact</a
+                >
             </div>
         </nav>
 
@@ -167,34 +223,31 @@
             <div class="container mx-auto px-6">
                 <div class="flex flex-col md:flex-row items-center gap-12">
                     <div class="w-full md:w-1/2 relative">
-                        <!-- Placeholder for abstract tech illustration if no photo -->
+                        <!-- Profile Image -->
                         <div
-                            class="w-full aspect-square max-w-md mx-auto relative rounded-2xl overflow-hidden glass-card border-none bg-dark-900/50 flex items-center justify-center group"
+                            class="w-full aspect-square max-w-md mx-auto relative rounded-2xl overflow-hidden glass-card border-none bg-dark-900/50 group"
                         >
+                            <img
+                                src="assets/new_profile.jpg"
+                                alt="Parthiv Ajith"
+                                width="400"
+                                height="400"
+                                loading="lazy"
+                                class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500"
+                            />
                             <div
-                                class="absolute inset-0 bg-gradient-to-tr from-primary/10 to-secondary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                                class="absolute inset-0 bg-gradient-to-tr from-primary/20 to-secondary/20 mix-blend-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                             ></div>
-                            <svg
-                                class="w-24 h-24 text-slate-700 animate-pulse-slow"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                            >
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="1.5"
-                                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
-                                />
-                            </svg>
                         </div>
                         <!-- Decorative elements -->
                         <div class="absolute -top-10 -left-10 w-24 h-24 bg-primary/20 rounded-full blur-[40px]"></div>
                         <div class="absolute -bottom-10 -right-10 w-32 h-32 bg-secondary/20 rounded-full blur-[40px]"></div>
                     </div>
 
-                    <div class="w-full md:w-1/2">
-                        <h2 class="text-3xl font-bold font-heading text-white mb-6 flex items-center gap-3">
+                    <div class="w-full md:w-1/2 text-center md:text-left">
+                        <h2
+                            class="text-3xl font-bold font-heading text-white mb-6 flex items-center justify-center md:justify-start gap-3"
+                        >
                             <span class="text-primary">//</span> About Me
                         </h2>
                         <div class="space-y-4 text-slate-400 leading-relaxed text-lg">
@@ -576,7 +629,7 @@
                     >
                         <svg role="img" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 pointer-events-none">
                             <path
-                                d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.173 5.423a1.398 1.398 0 0 0-.183 1.911l.546.886a1.398 1.398 0 0 0 1.911.183l5.349-4.985a1.374 1.374 0 0 0-.043-2.377L13.483 0zm-5.375 7.038L2.75 12.012a1.374 1.374 0 0 0 0 1.954l5.358 4.974a1.374 1.374 0 0 0 2.377-.044l1.317-1.42a1.398 1.398 0 0 0-.183-1.911l-2.053-1.87a6.292 6.292 0 0 1 0-.916l2.053-1.869a1.398 1.398 0 0 0 .183-1.912l-1.317-1.42a1.374 1.374 0 0 0-2.377-.044zM12.481 12.012a6.388 6.388 0 0 1 1.034 0l4.314-4.223a1.398 1.398 0 0 1 1.979 0l.965.945a1.398 1.398 0 0 1 0 1.979L18.73 12.755a6.002 6.002 0 0 1 0 1.489l2.043 2.043a1.398 1.398 0 0 1 0 1.979l-.965.945a1.398 1.398 0 0 1-1.979 0l-4.315-4.223a6.37 6.37 0 0 1-1.033 0l-1.642 1.547a1.374 1.374 0 0 0 0 1.954l5.358 4.974a1.374 1.374 0 0 0 2.377-.044l1.317-1.42a1.398 1.398 0 0 0-.183-1.911l-2.053-1.87a6.292 6.292 0 0 1 0-.916l2.053-1.869a1.398 1.398 0 0 0 .183-1.912l-1.317-1.42a1.374 1.374 0 0 0-2.377-.044l-5.358 4.974a1.374 1.374 0 0 0 0 1.954l1.643 1.547z"
+                                d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.173 5.423a1.398 1.398 0 0 0-.183 1.911l.546.886a1.398 1.398 0 0 0 1.911.183l5.349-4.985a1.374 1.374 0 0 0-.043-2.377L13.483 0zm-5.375 7.038L2.75 12.012a1.374 1.374 0 0 0 0 1.954l5.358 4.974a1.374 1.374 0 0 0 2.377-.044l1.317-1.42a1.398 1.398 0 0 0-.183-1.911l-2.053-1.87a6.292 6.292 0 0 1 0-.916l2.053-1.869a1.398 1.398 0 0 0 .183-1.912l-1.317-1.42a1.374 1.374 0 0 0-2.377-.044zM12.481 12.012a6.388 6.388 0 0 1 1.034 0l4.314-4.223a1.398 1.398 0 0 1 1.979 0l.965.945a1.398 1.398 0 0 1 0 1.979L18.73 12.755a6.002 6.002 0 0 1 0 1.489l2.043 2.043a1.398 1.398 0 0 1 0 1.979l-.965.945a1.398 1.398 0 0 1-1.979 0l-4.315-4.223a6.37 6.37 0 0 1-1.033 0l-1.642 1.547a1.374 1.374 0 0 0 0 1.954l5.358 4.974a1.374 1.374 0 0 0 2.377-.044l1.317-1.42a1.398 1.398 0 0 0-.183-1.911l-2.053-1.87a6.292 6.292 0 0 1 0-.916l2.053-1.869a1.398 1.398 0 0 0 .183-1.912l-1.317-1.42a1.374 1.374 0 0 0-2.377-.044z"
                             />
                         </svg>
                         <span class="sr-only">LeetCode</span>
