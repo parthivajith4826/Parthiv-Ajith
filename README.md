@@ -1,29 +1,47 @@
-# Parthiv Ajith - Developer Portfolio
+# Parthiv Ajith | Python & Django Developer Portfolio
 
-Welcome to my personal portfolio website. This project showcases my skills, projects, and professional background as a Python & Django Developer. It is designed to be modern, responsive, and performance-oriented.
+![Portfolio Preview](https://parthivajith.dev/assets/og-image.jpg)
 
-## 🚀 Technologies Used
+## 🚀 About Me
 
-This portfolio is built with a focus on clean code and modern web standards:
+I am an expert **Python & Django Developer** specializing in building robust, scalable composed backend systems and secure web architectures. This portfolio showcases my technical arsenal, featured projects, and professional background.
 
--   **HTML5**: Semantic structure for better accessibility and SEO.
--   **CSS3**: Custom styling combined with utility classes.
--   **Tailwind CSS**: For rapid, responsive styling and a consistent design system.
--   **JavaScript (ES6+)**: Vanilla JS for logic and DOM manipulation.
--   **GSAP (GreenSock Animation Platform)**: For smooth, complex animations (scroll triggers, staggers).
--   **Glassmorphism**: A modern UI design trend used for cards and navigation.
+**Check it out live:** [parthivajith.dev](https://parthivajith.dev)
+
+## 🛠 Tech Stack
+
+-   **Languages**: ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+-   **Frameworks**: ![Django](https://img.shields.io/badge/Django-092E20?style=flat&logo=django&logoColor=white) ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=flat&logo=bootstrap&logoColor=white)
+-   **Database**: ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat&logo=postgresql&logoColor=white)
+-   **Tools**: Git, Docker, REST APIs, Web3Forms
 
 ## ✨ Features
 
--   **Responsive Design**: Fully optimized for desktops, tablets, and mobile devices.
--   **SEO Optimized**: Includes Open Graph tags, Twitter Cards, and semantic elements for better search engine visibility.
--   **High Performance**: Lazy loading images, optimized assets, and minimal external dependencies.
--   **Interactive UI**: Smooth scroll animations, hover effects, and a custom mobile navigation menu.
--   **Contact Form**: Integrated with Web3Forms for direct email delivery.
+-   **"Bright Dark" Aesthetic**: A premium, high-contrast dark theme optimized for readability and visual appeal.
+-   **Fully Responsive**: Flawless experience across Mobile, Tablet, and Desktop devices.
+-   **SEO Optimized**: 100/100 SEO score potential with proper Schema Markup, Meta Tags, and Semantic HTML.
+-   **Performance**: Lightweight, static architecture deployable to Vercel/Netlify.
+-   **Contact Form**: Integrated working contact form via Web3Forms.
 
 ## 📂 Project Structure
 
--   `index.html`: The main entry point containing the structure and content.
--   `styles.css`: Custom CSS overrides and animations.
--   `script.js`: JavaScript logic for the mobile menu and GSAP animations.
--   `assets/`: Directory for images and static assets.
+```
+/
+├── assets/          # Images and static resources
+├── styles.css       # Custom "Bright Dark" CSS theme
+├── index.html       # Main portfolio page
+├── robots.txt       # SEO crawling rules
+└── sitemap.xml      # SEO indexing map
+```
+
+## 🚀 Deployment
+
+This project is ready for one-click deployment on **Vercel**.
+
+1.  Push this repo to GitHub.
+2.  Import into Vercel.
+3.  Deploy!
+
+---
+
+&copy; 2026 Parthiv Ajith. Built with ❤️ and Code.
