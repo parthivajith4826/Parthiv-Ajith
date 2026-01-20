@@ -211,6 +211,24 @@ h1, h2, h3, h4, h5, h6 {
     h1.display-3 {
         font-size: 3rem;
     }
+
+    /* Navbar specific adjustments for mobile */
+    .navbar-collapse .d-flex {
+        justify-content: flex-start !important;
+        margin-left: 0;
+        padding-left: 0;
+        width: 100%; /* Ensure container takes full width for alignment */
+    }
+    
+    .navbar-collapse .btn-primary {
+         padding: 0.35rem 1rem !important; /* Smaller padding */
+         font-size: 0.75rem;
+         width: fit-content;
+         margin-top: 0.25rem;
+         margin-left: 0 !important;
+         border-radius: 4px; /* Slightly less rounded for a tighter feel if desired, keeping consistent with pills though? let's stick to pill but smaller */
+         border-radius: 50px; 
+    } 
 }
 
 /* Mobile Devices */
