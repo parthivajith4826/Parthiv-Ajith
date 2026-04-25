@@ -132,6 +132,19 @@ function App() {
                 <div className="hero-badge hero-badge-2">API Design</div>
                 <div className="hero-badge hero-badge-3">REST APIs</div>
                 <div className="hero-badge hero-badge-4">Scalable<br/>Web Apps</div>
+                
+                {/* Zoho Badge */}
+                <div className="hero-badge" style={{
+                  top: "40%",
+                  right: "-40px",
+                  backgroundColor: "#fff",
+                  borderRadius: "12px",
+                  padding: "0.8rem 1rem",
+                  transform: "rotate(0deg)",
+                  boxShadow: "0 15px 30px rgba(0,0,0,0.5)"
+                }}>
+                  <img src="assets/zoho.svg" alt="Zoho" style={{ height: "30px", width: "auto" }} />
+                </div>
 
                 <img
                   src="assets/new_profile.jpg"
