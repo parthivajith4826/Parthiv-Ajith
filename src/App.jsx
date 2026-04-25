@@ -123,23 +123,20 @@ function App() {
             </div>
 
             {/* Hero Background/Image */}
-            <div className="col-lg-6 position-relative" data-aos="fade-left" data-aos-delay="400">
-              <div className="hero-image-wrapper p-4 text-center">
-                <div
-                  className="rounded-circle position-absolute top-50 start-50 translate-middle"
-                  style={{
-                    width: "500px",
-                    height: "500px",
-                    zIndex: -1,
-                    opacity: 0.1,
-                    background: "var(--color-gold)",
-                  }}
-                ></div>
+            <div className="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="400">
+              <div className="modern-hero-container">
+                <div className="modern-hero-grid"></div>
+                
+                {/* Floating Badges */}
+                <div className="hero-badge hero-badge-1">Backend<br/>Architecture</div>
+                <div className="hero-badge hero-badge-2">API Design</div>
+                <div className="hero-badge hero-badge-3">REST APIs</div>
+                <div className="hero-badge hero-badge-4">Scalable<br/>Web Apps</div>
+
                 <img
                   src="assets/new_profile.jpg"
                   alt="Parthiv Ajith - Expert Python Django Backend Developer"
-                  className="img-fluid rounded-4 shadow-lg hover-3d border border-secondary"
-                  style={{ width: "100%", maxWidth: "450px", objectFit: "cover" }}
+                  className="hero-main-img img-fluid rounded-4 border-secondary"
                 />
               </div>
             </div>

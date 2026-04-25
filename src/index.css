@@ -293,3 +293,125 @@ h1, h2, h3, h4, h5, h6 {
         display: none; /* Hide complex shapes on mobile for performance/cleanliness */
     }
 }
+
+/* =========================================
+   MODERN HERO IMAGE REDESIGN
+   ========================================= */
+.modern-hero-container {
+    background-color: #161616;
+    border-radius: 30px 150px 150px 30px;
+    position: relative;
+    overflow: visible;
+    padding: 3rem 2rem;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    border: 1px solid rgba(255,255,255,0.05);
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modern-hero-grid {
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    overflow: hidden;
+    /* Clean dark architectural grid */
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    z-index: 0;
+}
+
+.hero-main-img {
+    position: relative;
+    z-index: 10;
+    max-width: 350px;
+    width: 100%;
+    filter: drop-shadow(0 20px 30px rgba(0,0,0,0.8));
+    animation: floating 6s ease-in-out infinite;
+}
+
+.hero-badge {
+    position: absolute;
+    z-index: 20;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+    pointer-events: none;
+    transition: transform 0.3s ease;
+}
+
+.hero-badge:hover {
+    transform: scale(1.1) !important;
+}
+
+.hero-badge-1 {
+    top: -20px;
+    left: -30px;
+    background-color: #0dcae9; /* Cyan */
+    color: #000;
+    transform: rotate(-8deg);
+    border-radius: 50% 50% 50% 50% / 10% 10% 90% 90%; /* Slight arch */
+    padding: 1.5rem 1rem;
+}
+
+.hero-badge-2 {
+    bottom: 40px;
+    left: -40px;
+    background-color: #ffb800; /* Yellow */
+    color: #000;
+    transform: rotate(5deg);
+    border: 2px dashed #000;
+}
+
+.hero-badge-3 {
+    top: 30px;
+    right: -20px;
+    background-color: #ff3366; /* Pink */
+    color: #fff;
+    transform: rotate(12deg);
+}
+
+.hero-badge-4 {
+    bottom: 20px;
+    right: -10px;
+    background-color: #00e676; /* Green */
+    color: #000;
+    transform: rotate(-15deg);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.7rem;
+    border: 2px dotted #000;
+}
+
+@keyframes floating {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+@media (max-width: 991px) {
+    .modern-hero-container {
+        border-radius: 30px;
+        margin-top: 3rem;
+    }
+    .hero-badge {
+        font-size: 0.7rem;
+        padding: 0.4rem 0.8rem;
+    }
+    .hero-badge-1 { top: -10px; left: -10px; }
+    .hero-badge-2 { bottom: 10px; left: -10px; }
+    .hero-badge-3 { top: 10px; right: -10px; }
+    .hero-badge-4 { bottom: 10px; right: -5px; width: 80px; height: 80px; }
+}
