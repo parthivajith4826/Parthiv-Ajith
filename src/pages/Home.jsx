@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
-// Import styles is handled in main.jsx usually, but we can do it here too
-// AOS is loaded globally via CDN in index.html, but we will initialize it here
+import { Helmet } from "react-helmet-async";
 
 function Home() {
   useEffect(() => {
@@ -14,6 +13,12 @@ function Home() {
 
   return (
     <>
+      <Helmet>
+        <title>Parthiv Ajith | Python Django & Zoho Backend Developer</title>
+        <meta name="description" content="I am a Python Django backend developer based in Kerala, specializing in API architecture, database optimization, and custom Zoho integrations." />
+        <link rel="canonical" href="https://parthivajith.dev/" />
+      </Helmet>
+
       {/* Navbar has been extracted to a unified layout component */}
 
       {/* Hero Section */}
@@ -187,7 +192,7 @@ function Home() {
       </section>
 
       {/* Skills Section */}
-      <section id="skills" className="py-5 position-relative">
+      <section id="skills" className="py-5 position-relative bg-black">
         <div className="container py-5">
           <div className="text-center mb-5 section-header">
             <h2 className="display-5 fw-bold mb-3" data-aos="fade-up">Technical Arsenal</h2>
@@ -341,7 +346,7 @@ function Home() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-5">
+      <section id="projects" className="py-5 bg-dark-lighter border-top border-bottom border-secondary" style={{ borderTop: "1px solid rgba(255,255,255,0.05)", borderBottom: "1px solid rgba(255,255,255,0.05)" }}>
         <div className="container py-5">
           <div className="text-center mb-5 section-header">
             <h2 className="display-5 fw-bold mb-3" data-aos="fade-up">Featured Projects</h2>
@@ -403,7 +408,7 @@ function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-5 position-relative overflow-hidden">
+      <section id="contact" className="py-5 position-relative overflow-hidden bg-black">
         <div className="container py-5">
           <div className="row section-header align-items-center">
             <div className="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
